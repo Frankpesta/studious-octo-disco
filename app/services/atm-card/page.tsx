@@ -14,7 +14,7 @@ export default function AtmCard() {
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
 			<section className="relative py-20 md:py-32 overflow-hidden">
-				<div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 -z-10" />
+				<div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50 dark:from-blue-950/20 dark:to-green-950/20 -z-10" />
 				<div className="container px-4 md:px-6">
 					<div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
 						<div className="flex flex-col justify-center space-y-4">
@@ -31,7 +31,7 @@ export default function AtmCard() {
 								<Button
 									asChild
 									size="lg"
-									className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700">
+									className="bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700">
 									<Link href="/contact-us">
 										Get Your Card <ArrowRight className="ml-2 h-4 w-4" />
 									</Link>
@@ -42,7 +42,7 @@ export default function AtmCard() {
 							<div className="relative w-full max-w-[500px] aspect-square">
 								<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-600/20 dark:bg-blue-400/10 rounded-full blur-3xl animate-pulse-slow" />
 								<div className="relative z-10 w-full h-full flex items-center justify-center">
-									<div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-xl flex items-center justify-center animate-float">
+									<div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-green-600 rounded-2xl shadow-xl flex items-center justify-center animate-float">
 										<CreditCard className="h-24 w-24 text-white" />
 									</div>
 								</div>
@@ -117,7 +117,7 @@ export default function AtmCard() {
 			</section>
 
 			{/* How It Works */}
-			<section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20">
+			<section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-green-50 dark:from-blue-950/20 dark:to-green-950/20">
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tighter">
@@ -175,7 +175,7 @@ export default function AtmCard() {
 			</section>
 
 			{/* CTA Section */}
-			<section className="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+			<section className="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-green-600 text-white">
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">

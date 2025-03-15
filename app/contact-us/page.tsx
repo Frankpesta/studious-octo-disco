@@ -54,7 +54,7 @@ export default function ContactUs() {
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
 			<section className="relative py-20 md:py-32 overflow-hidden">
-				<div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-950/20 dark:to-blue-950/20 -z-10" />
+				<div className="absolute inset-0 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 -z-10" />
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
@@ -131,7 +131,7 @@ export default function ContactUs() {
 									</div>
 									<Button
 										type="submit"
-										className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+										className="w-full bg-gradient-to-r from-green-600 to-blue-500 hover:from-green-700 hover:to-blue-600"
 										disabled={isSubmitting}>
 										{isSubmitting ? (
 											<span className="flex items-center gap-2">
@@ -174,7 +174,7 @@ export default function ContactUs() {
 								</CardHeader>
 								<CardContent className="space-y-4">
 									<div className="flex items-start space-x-4">
-										<Mail className="h-6 w-6 text-purple-600 dark:text-purple-400 mt-0.5" />
+										<Mail className="h-6 w-6 text-green-600 dark:text-green-400 mt-0.5" />
 										<div>
 											<h3 className="font-medium">Email</h3>
 											<p className="text-muted-foreground">
@@ -183,14 +183,14 @@ export default function ContactUs() {
 										</div>
 									</div>
 									<div className="flex items-start space-x-4">
-										<Phone className="h-6 w-6 text-purple-600 dark:text-purple-400 mt-0.5" />
+										<Phone className="h-6 w-6 text-green-600 dark:text-green-400 mt-0.5" />
 										<div>
 											<h3 className="font-medium">Phone</h3>
 											<p className="text-muted-foreground">+1 (555) 123-4567</p>
 										</div>
 									</div>
 									<div className="flex items-start space-x-4">
-										<MapPin className="h-6 w-6 text-purple-600 dark:text-purple-400 mt-0.5" />
+										<MapPin className="h-6 w-6 text-green-600 dark:text-green-400 mt-0.5" />
 										<div>
 											<h3 className="font-medium">Office</h3>
 											<p className="text-muted-foreground">

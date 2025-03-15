@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/toggle-theme";
+import Image from "next/image";
 import {
 	Sheet,
 	SheetContent,
@@ -46,11 +47,13 @@ export function Navbar() {
 				aria-label="Global">
 				<div className="flex lg:flex-1">
 					<Link href="/" className="-m-1.5 p-1.5">
-						<span className="sr-only">Fortifi.Ai</span>
-						<div className="flex items-center gap-2">
-							<div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-blue-500"></div>
-							<span className="text-xl font-bold">Fortifi.Ai</span>
-						</div>
+						<Image
+							src={"/logo.png"}
+							alt="fortifi logo"
+							width={120}
+							height={120}
+							className="object-contain"
+						/>
 					</Link>
 				</div>
 				<div className="flex lg:hidden">
@@ -67,8 +70,13 @@ export function Navbar() {
 							<SheetHeader className="mb-6">
 								<SheetTitle>
 									<Link href="/" className="flex items-center gap-2">
-										<div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-blue-500"></div>
-										<span className="text-xl font-bold">Fortifi.Ai</span>
+										<Image
+											src={"/logo.png"}
+											alt="fortifi logo"
+											width={120}
+											height={120}
+											className="object-contain"
+										/>
 									</Link>
 								</SheetTitle>
 							</SheetHeader>

@@ -2,7 +2,7 @@ export default function PrivacyPolicy() {
 	return (
 		<div className="flex flex-col min-h-screen">
 			<section className="relative py-20 md:py-32 overflow-hidden">
-				<div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-950/20 dark:to-blue-950/20 -z-10" />
+				<div className="absolute inset-0 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 -z-10" />
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">

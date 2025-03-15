@@ -6,7 +6,7 @@ export default function AboutUs() {
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
 			<section className="relative py-20 md:py-32 overflow-hidden">
-				<div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-950/20 dark:to-blue-950/20 -z-10" />
+				<div className="absolute inset-0 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 -z-10" />
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
@@ -49,16 +49,16 @@ export default function AboutUs() {
 						</div>
 						<div className="relative flex items-center justify-center">
 							<div className="grid grid-cols-2 gap-4">
-								<div className="h-40 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center">
+								<div className="h-40 rounded-lg bg-gradient-to-br from-green-600 to-blue-500 flex items-center justify-center">
 									<Shield className="h-16 w-16 text-white" />
 								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
 									<Award className="h-16 w-16 text-white" />
 								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
 									<Users className="h-16 w-16 text-white" />
 								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center">
+								<div className="h-40 rounded-lg bg-gradient-to-br from-green-600 to-blue-500 flex items-center justify-center">
 									<TrendingUp className="h-16 w-16 text-white" />
 								</div>
 							</div>
@@ -68,7 +68,7 @@ export default function AboutUs() {
 			</section>
 
 			{/* Our Values */}
-			<section className="py-16 md:py-24 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-950/20 dark:to-blue-950/20">
+			<section className="py-16 md:py-24 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20">
 				<div className="container px-4 md:px-6">
 					<div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tighter">Our Values</h2>
@@ -79,7 +79,7 @@ export default function AboutUs() {
 					<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 						<Card>
 							<CardHeader>
-								<Shield className="h-12 w-12 text-purple-600 dark:text-purple-400 mb-2" />
+								<Shield className="h-12 w-12 text-green-600 dark:text-green-400 mb-2" />
 								<CardTitle>Security First</CardTitle>
 							</CardHeader>
 							<CardContent>
@@ -92,7 +92,7 @@ export default function AboutUs() {
 						</Card>
 						<Card>
 							<CardHeader>
-								<Award className="h-12 w-12 text-purple-600 dark:text-purple-400 mb-2" />
+								<Award className="h-12 w-12 text-green-600 dark:text-green-400 mb-2" />
 								<CardTitle>Innovation</CardTitle>
 							</CardHeader>
 							<CardContent>
@@ -105,7 +105,7 @@ export default function AboutUs() {
 						</Card>
 						<Card>
 							<CardHeader>
-								<Users className="h-12 w-12 text-purple-600 dark:text-purple-400 mb-2" />
+								<Users className="h-12 w-12 text-green-600 dark:text-green-400 mb-2" />
 								<CardTitle>Accessibility</CardTitle>
 							</CardHeader>
 							<CardContent>
@@ -169,7 +169,7 @@ export default function AboutUs() {
 								</div>
 								<div className="space-y-2 text-center">
 									<h3 className="text-xl font-bold">{member.name}</h3>
-									<p className="text-sm text-purple-600 dark:text-purple-400 font-medium">
+									<p className="text-sm text-green-600 dark:text-green-400 font-medium">
 										{member.role}
 									</p>
 									<p className="text-sm text-muted-foreground">{member.bio}</p>
