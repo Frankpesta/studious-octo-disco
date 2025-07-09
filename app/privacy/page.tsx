@@ -27,16 +27,16 @@ export default function PrivacyPolicy() {
 					<div className="prose dark:prose-invert max-w-none">
 						<h2>1. Introduction</h2>
 						<p>
-							At Fortifi.Ai, we respect your privacy and are committed to
-							protecting your personal data. This Privacy Policy explains how we
-							collect, use, disclose, and safeguard your information when you
+							At Astrologers Fund Inc., we respect your privacy and are committed
+							to protecting your personal data. This Privacy Policy explains how
+							we collect, use, disclose, and safeguard your information when you
 							use our website, stable wallet, and payment card services.
 						</p>
 
 						<h2>2. Information We Collect</h2>
 						<p>
 							We may collect several types of information from and about users
-							of our Services, including:
+							of our Services, Inc.luding:
 						</p>
 						<ul>
 							<li>
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
 						<h2>3. How We Use Your Information</h2>
 						<p>
 							We may use the information we collect about you for various
-							purposes, including:
+							purposes, Inc.luding:
 						</p>
 						<ul>
 							<li>Providing, maintaining, and improving our Services</li>
@@ -100,11 +100,11 @@ export default function PrivacyPolicy() {
 						<h2>6. Your Rights and Choices</h2>
 						<p>
 							Depending on your location, you may have certain rights regarding
-							your personal information, including:
+							your personal information, Inc.luding:
 						</p>
 						<ul>
 							<li>Access to your personal information</li>
-							<li>Correction of inaccurate or incomplete information</li>
+							<li>Correction of inaccurate or Inc.omplete information</li>
 							<li>Deletion of your personal information</li>
 							<li>Restriction or objection to processing</li>
 							<li>Data portability</li>
@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
 						<h2>10. Contact Us</h2>
 						<p>
 							If you have any questions about this Privacy Policy, please
-							contact us at privacy@fortifi.ai.
+							contact us at privacy@Astrologers Fund Inc..
 						</p>
 					</div>
 				</div>

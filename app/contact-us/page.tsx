@@ -15,6 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
 
 export default function ContactUs() {
@@ -24,32 +25,50 @@ export default function ContactUs() {
 		phone: "",
 		message: "",
 	});
-	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [loading, setLoading] = useState(false);
+	const [status, setStatus] = useState<{
+		success: boolean;
+		message: string;
+	} | null>(null);
 
 	const handleChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
-		const { name, value } = e.target;
-		setFormData((prev) => ({ ...prev, [name]: value }));
+		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
-		setIsSubmitting(true);
+		setLoading(true);
+		setStatus(null);
 
-		// Simulate form submission
-		setTimeout(() => {
-			toast.success("Message sent successfully!");
+		try {
+			await emailjs.send(
+				"service_umtw4xp",
+				"template_su4z4bf",
+				{
+					name: `${formData.name}`,
+					email: formData.email,
+					phone: formData.phone,
+					message: formData.message,
+				},
+				"R1zIMXUvPG30qttuq"
+			);
+
+			toast.success("Message sent successfuly");
 			setFormData({
 				name: "",
+
 				email: "",
 				phone: "",
 				message: "",
 			});
-			setIsSubmitting(false);
-		}, 1500);
-	};
+		} catch (error) {
+			toast.error(`${error}`);
+		}
 
+		setLoading(false);
+	};
 	return (
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
@@ -63,7 +82,7 @@ export default function ContactUs() {
 							</h1>
 							<p className="max-w-[700px] text-muted-foreground md:text-xl">
 								Get in touch with our team for any questions, support, or to get
-								started with Fortifi.Ai
+								started with Astrologers Fund Inc.
 							</p>
 						</div>
 					</div>
@@ -132,8 +151,8 @@ export default function ContactUs() {
 									<Button
 										type="submit"
 										className="w-full bg-gradient-to-r from-green-600 to-blue-500 hover:from-green-700 hover:to-blue-600"
-										disabled={isSubmitting}>
-										{isSubmitting ? (
+										disabled={loading}>
+										{loading ? (
 											<span className="flex items-center gap-2">
 												<svg
 													className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
@@ -178,25 +197,19 @@ export default function ContactUs() {
 										<div>
 											<h3 className="font-medium">Email</h3>
 											<p className="text-muted-foreground">
-												support@fortifi.ai
+												support@fortifiafunds.com
 											</p>
 										</div>
 									</div>
-									<div className="flex items-start space-x-4">
-										<Phone className="h-6 w-6 text-green-600 dark:text-green-400 mt-0.5" />
-										<div>
-											<h3 className="font-medium">Phone</h3>
-											<p className="text-muted-foreground">+1 (555) 123-4567</p>
-										</div>
-									</div>
+
 									<div className="flex items-start space-x-4">
 										<MapPin className="h-6 w-6 text-green-600 dark:text-green-400 mt-0.5" />
 										<div>
 											<h3 className="font-medium">Office</h3>
 											<p className="text-muted-foreground">
-												123 Blockchain Avenue
+												310 Lexington Avenue Suite 36
 												<br />
-												San Francisco, CA 94103
+												NEW YORK, N.Y. 10016
 												<br />
 												United States
 											</p>

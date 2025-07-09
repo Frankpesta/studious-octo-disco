@@ -1,9 +1,18 @@
+"use client";
 import Link from "next/link";
 import { ArrowRight, Shield, TrendingUp, LineChart, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function StableWallet() {
+	const handleLogin = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/login";
+	};
+	const handleRegister = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/register";
+	};
+
 	return (
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
@@ -23,12 +32,10 @@ export default function StableWallet() {
 							</div>
 							<div className="flex flex-col gap-2 min-[400px]:flex-row">
 								<Button
-									asChild
+									onClick={handleLogin}
 									size="lg"
 									className="bg-gradient-to-r from-green-600 to-blue-500 hover:from-green-700 hover:to-blue-600">
-									<Link href="/contact-us">
-										Get Started <ArrowRight className="ml-2 h-4 w-4" />
-									</Link>
+									Get Started <ArrowRight className="ml-2 h-4 w-4" />
 								</Button>
 							</div>
 						</div>
@@ -37,7 +44,13 @@ export default function StableWallet() {
 								<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-green-600/20 dark:bg-green-400/10 rounded-full blur-3xl animate-pulse-slow" />
 								<div className="relative z-10 w-full h-full flex items-center justify-center">
 									<div className="w-64 h-64 bg-gradient-to-br from-green-600 to-blue-500 rounded-2xl shadow-xl flex items-center justify-center animate-float">
-										<Shield className="h-24 w-24 text-white" />
+										<Image
+											src="/assets/atm.jpg"
+											alt="service-image"
+											fill
+											objectFit="cover"
+											className="object-cover rounded-2xl w-full h-full rotate-0 md:rotate-[18deg] drop-shadow-2xl"
+										/>
 									</div>
 								</div>
 							</div>
@@ -68,8 +81,9 @@ export default function StableWallet() {
 							</CardHeader>
 							<CardContent>
 								<p>
-									Transfer your cryptocurrency to your Fortifi.Ai wallet. We
-									support Bitcoin, Ethereum, and other major cryptocurrencies.
+									Transfer your cryptocurrency to your Astrologers Fund Inc.
+									wallet. We support Bitcoin, Ethereum, and other major
+									cryptocurrencies.
 								</p>
 							</CardContent>
 						</Card>
@@ -113,7 +127,7 @@ export default function StableWallet() {
 					<div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tighter">Benefits</h2>
 						<p className="max-w-[700px] text-muted-foreground">
-							Why choose Fortifi.Ai's Stable Wallet
+							Why choose Astrologers Fund Inc.'s Stable Wallet
 						</p>
 					</div>
 					<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -178,13 +192,13 @@ export default function StableWallet() {
 								Ready to Secure Your Crypto?
 							</h2>
 							<p className="max-w-[600px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Join thousands of users who trust Fortifi.Ai for their crypto
-								stability needs.
+								Join thousands of users who trust Astrologers Fund Inc. for
+								their crypto stability needs.
 							</p>
 						</div>
 						<div className="flex flex-col gap-2 min-[400px]:flex-row">
-							<Button size="lg" variant="secondary" asChild>
-								<Link href="/contact-us">Get Started Today</Link>
+							<Button size="lg" variant="secondary" onClick={handleRegister}>
+								Get Started Today
 							</Button>
 						</div>
 					</div>

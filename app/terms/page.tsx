@@ -27,17 +27,17 @@ export default function TermsOfService() {
 					<div className="prose dark:prose-invert max-w-none">
 						<h2>1. Introduction</h2>
 						<p>
-							Welcome to Fortifi.Ai. These Terms of Service govern your use of
-							our website, products, and services. By accessing or using
-							Fortifi.Ai, you agree to be bound by these Terms.
+							Welcome to Astrologers Fund Inc.. These Terms of Service govern
+							your use of our website, products, and services. By accessing or
+							using Astrologers Fund Inc., you agree to be bound by these Terms.
 						</p>
 
 						<h2>2. Definitions</h2>
 						<p>
-							"Service" refers to the Fortifi.Ai website, stable wallet, and
-							payment card services. "User," "You," and "Your" refer to the
-							individual or entity using our Service. "Company," "We," "Us," and
-							"Our" refer to Fortifi.Ai.
+							"Service" refers to the Astrologers Fund Inc. website, stable
+							wallet, and payment card services. "User," "You," and "Your" refer
+							to the individual or entity using our Service. "Company," "We,"
+							"Us," and "Our" refer to Astrologers Fund Inc..
 						</p>
 
 						<h2>3. Account Registration</h2>
@@ -80,9 +80,10 @@ export default function TermsOfService() {
 						<h2>7. Intellectual Property</h2>
 						<p>
 							The Service and its original content, features, and functionality
-							are and will remain the exclusive property of Fortifi.Ai and its
-							licensors. The Service is protected by copyright, trademark, and
-							other laws of both the United States and foreign countries.
+							are and will remain the exclusive property of Astrologers Fund
+							Inc. and its licensors. The Service is protected by copyright,
+							trademark, and other laws of both the United States and foreign
+							countries.
 						</p>
 
 						<h2>8. Termination</h2>
@@ -90,17 +91,17 @@ export default function TermsOfService() {
 							We may terminate or suspend your account and bar access to the
 							Service immediately, without prior notice or liability, under our
 							sole discretion, for any reason whatsoever and without limitation,
-							including but not limited to a breach of the Terms.
+							Inc.luding but not limited to a breach of the Terms.
 						</p>
 
 						<h2>9. Limitation of Liability</h2>
 						<p>
-							In no event shall Fortifi.Ai, nor its directors, employees,
-							partners, agents, suppliers, or affiliates, be liable for any
-							indirect, incidental, special, consequential or punitive damages,
-							including without limitation, loss of profits, data, use,
-							goodwill, or other intangible losses, resulting from your access
-							to or use of or inability to access or use the Service.
+							In no event shall Astrologers Fund Inc., nor its directors,
+							employees, partners, agents, suppliers, or affiliates, be liable
+							for any indirect, Inc.idental, special, consequential or punitive
+							damages, Inc.luding without limitation, loss of profits, data,
+							use, goodwill, or other intangible losses, resulting from your
+							access to or use of or inability to access or use the Service.
 						</p>
 
 						<h2>10. Changes to Terms</h2>
@@ -115,7 +116,7 @@ export default function TermsOfService() {
 						<h2>11. Contact Us</h2>
 						<p>
 							If you have any questions about these Terms, please contact us at
-							support@fortifi.ai.
+							support@Astrologers Fund Inc..
 						</p>
 					</div>
 				</div>

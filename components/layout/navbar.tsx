@@ -39,6 +39,9 @@ export function Navbar() {
 	useEffect(() => {
 		setMobileMenuOpen(false);
 	}, [pathname]);
+	const handleRegister = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/register";
+	};
 
 	return (
 		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -123,9 +126,7 @@ export function Navbar() {
 									<div className="flex items-center justify-between py-6">
 										<ModeToggle />
 										<SheetClose asChild>
-											<Button asChild>
-												<Link href="/contact-us">Get Started</Link>
-											</Button>
+											<Button onClick={handleRegister}>Get Started</Button>
 										</SheetClose>
 									</div>
 								</div>
@@ -178,9 +179,7 @@ export function Navbar() {
 				</div>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-4">
 					<ModeToggle />
-					<Button asChild>
-						<Link href="/contact-us">Get Started</Link>
-					</Button>
+					<Button onClick={handleRegister}>Get Started</Button>
 				</div>
 			</nav>
 		</header>

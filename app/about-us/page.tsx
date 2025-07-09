@@ -1,5 +1,6 @@
 import { Shield, Award, Users, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function AboutUs() {
 	return (
@@ -11,7 +12,7 @@ export default function AboutUs() {
 					<div className="flex flex-col items-center justify-center space-y-4 text-center">
 						<div className="space-y-2">
 							<h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-								About Fortifi.Ai
+								About Astrologers Fund Inc.
 							</h1>
 							<p className="max-w-[700px] text-muted-foreground md:text-xl">
 								We're on a mission to make cryptocurrency safer, more stable,
@@ -29,9 +30,9 @@ export default function AboutUs() {
 						<div className="space-y-4">
 							<h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
 							<p className="text-muted-foreground">
-								Fortifi.Ai was founded by a team of blockchain experts,
-								financial analysts, and AI specialists who recognized a critical
-								problem in the cryptocurrency market: volatility.
+								Astrologers Fund Inc. was founded by a team of blockchain
+								experts, financial analysts, and AI specialists who recognized a
+								critical problem in the cryptocurrency market: volatility.
 							</p>
 							<p className="text-muted-foreground">
 								We witnessed countless investors lose significant portions of
@@ -42,26 +43,20 @@ export default function AboutUs() {
 							</p>
 							<p className="text-muted-foreground">
 								After years of research and development, we created our
-								AI-powered stable wallet technology, which has since helped
+								AI-powered stable wallet technology, which has sInc.e helped
 								thousands of users safeguard their investments against market
 								volatility.
 							</p>
 						</div>
-						<div className="relative flex items-center justify-center">
-							<div className="grid grid-cols-2 gap-4">
-								<div className="h-40 rounded-lg bg-gradient-to-br from-green-600 to-blue-500 flex items-center justify-center">
-									<Shield className="h-16 w-16 text-white" />
-								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
-									<Award className="h-16 w-16 text-white" />
-								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
-									<Users className="h-16 w-16 text-white" />
-								</div>
-								<div className="h-40 rounded-lg bg-gradient-to-br from-green-600 to-blue-500 flex items-center justify-center">
-									<TrendingUp className="h-16 w-16 text-white" />
-								</div>
-							</div>
+						<div className="">
+							<Image
+								src="/assets/about.jpg"
+								alt="about-image"
+								width={500}
+								height={500}
+								objectFit="cover"
+								className="object-cover rounded-xl"
+							/>
 						</div>
 					</div>
 				</div>
@@ -73,7 +68,8 @@ export default function AboutUs() {
 					<div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tighter">Our Values</h2>
 						<p className="max-w-[700px] text-muted-foreground">
-							The principles that guide everything we do at Fortifi.Ai
+							The principles that guide everything we do at Astrologers Fund
+							Inc.
 						</p>
 					</div>
 					<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -125,33 +121,33 @@ export default function AboutUs() {
 					<div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tighter">Our Team</h2>
 						<p className="max-w-[700px] text-muted-foreground">
-							Meet the experts behind Fortifi.Ai
+							Meet the experts behind Astrologers Fund Inc.
 						</p>
 					</div>
 					<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 						{[
 							{
-								name: "Alex Johnson",
+								name: "Henry Weingarten",
 								role: "CEO & Founder",
-								image: "/placeholder.svg?height=300&width=300",
+								image: "/assets/man.jpg",
 								bio: "Blockchain expert with 10+ years in fintech",
 							},
 							{
 								name: "Sarah Chen",
 								role: "CTO",
-								image: "/placeholder.svg?height=300&width=300",
+								image: "/assets/china.jpg",
 								bio: "AI specialist and former Google engineer",
 							},
 							{
-								name: "Michael Rodriguez",
+								name: "Michael Sanders",
 								role: "Head of Security",
-								image: "/placeholder.svg?height=300&width=300",
+								image: "/assets/woman1.jpg",
 								bio: "Cybersecurity veteran with focus on blockchain",
 							},
 							{
 								name: "Priya Sharma",
 								role: "Chief Financial Officer",
-								image: "/placeholder.svg?height=300&width=300",
+								image: "/assets/indian.jpg",
 								bio: "Former investment banker specializing in crypto markets",
 							},
 						].map((member) => (

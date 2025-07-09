@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 import {
 	ArrowRight,
 	CreditCard,
@@ -8,8 +8,16 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function AtmCard() {
+	const handleLogin = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/login";
+	};
+	const handleRegister = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/register";
+	};
+
 	return (
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
@@ -29,12 +37,10 @@ export default function AtmCard() {
 							</div>
 							<div className="flex flex-col gap-2 min-[400px]:flex-row">
 								<Button
-									asChild
+									onClick={handleLogin}
 									size="lg"
 									className="bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700">
-									<Link href="/contact-us">
-										Get Your Card <ArrowRight className="ml-2 h-4 w-4" />
-									</Link>
+									Get Your Card <ArrowRight className="ml-2 h-4 w-4" />
 								</Button>
 							</div>
 						</div>
@@ -43,7 +49,13 @@ export default function AtmCard() {
 								<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-600/20 dark:bg-blue-400/10 rounded-full blur-3xl animate-pulse-slow" />
 								<div className="relative z-10 w-full h-full flex items-center justify-center">
 									<div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-green-600 rounded-2xl shadow-xl flex items-center justify-center animate-float">
-										<CreditCard className="h-24 w-24 text-white" />
+										<Image
+											src="/assets/cards.jpg"
+											alt="Hero-image"
+											fill
+											objectFit="cover"
+											className="object-cover rounded-2xl w-full h-full drop-shadow-2xl"
+										/>
 									</div>
 								</div>
 							</div>
@@ -79,7 +91,7 @@ export default function AtmCard() {
 						<Card>
 							<CardHeader>
 								<DollarSign className="h-12 w-12 text-blue-600 dark:text-blue-400 mb-2" />
-								<CardTitle>Fee-Free ATM Withdrawals</CardTitle>
+								<CardTitle>Staking</CardTitle>
 							</CardHeader>
 							<CardContent>
 								<p>
@@ -187,8 +199,8 @@ export default function AtmCard() {
 							</p>
 						</div>
 						<div className="flex flex-col gap-2 min-[400px]:flex-row">
-							<Button size="lg" variant="secondary" asChild>
-								<Link href="/contact-us">Apply Now</Link>
+							<Button size="lg" variant="secondary" onClick={handleRegister}>
+								Apply Now
 							</Button>
 						</div>
 					</div>

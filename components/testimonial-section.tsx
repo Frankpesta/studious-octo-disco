@@ -20,10 +20,10 @@ const testimonials: Testimonial[] = [
 		id: 1,
 		name: "Sarah Johnson",
 		role: "CFO",
-		company: "TechVentures Inc.",
+		company: "TechVentures Inc..",
 		content:
-			"Fortifi.Ai has completely transformed how we manage our crypto assets. The stable wallet feature saved us during the last market crash, protecting over 80% of our investment value.",
-		avatar: "/placeholder.svg?height=100&width=100",
+			"Astrologers Fund Inc. has completely transformed how we manage our crypto assets. The stable wallet feature saved us during the last market crash, protecting over 80% of our investment value.",
+		avatar: "/assets/lady1.jpg",
 	},
 	{
 		id: 2,
@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
 		company: "Blockchain Innovations",
 		content:
 			"I've been using the Fortifi Card for 6 months now, and it's been a game-changer. I can spend my crypto anywhere without worrying about tax implications or hidden fees.",
-		avatar: "/placeholder.svg?height=100&width=100",
+		avatar: "/assets/guy1.jpg",
 	},
 	{
 		id: 3,
@@ -40,8 +40,8 @@ const testimonials: Testimonial[] = [
 		role: "Investment Manager",
 		company: "Capital Growth Partners",
 		content:
-			"As someone who manages crypto portfolios professionally, I can't recommend Fortifi.Ai enough. The stability mechanisms are truly innovative and have become an essential part of our risk management strategy.",
-		avatar: "/placeholder.svg?height=100&width=100",
+			"As someone who manages crypto portfolios professionally, I can't recommend Astrologers Fund Inc. enough. The stability mechanisms are truly innovative and have become an essential part of our risk management strategy.",
+		avatar: "/assets/lady2.jpg",
 	},
 	{
 		id: 4,
@@ -49,17 +49,8 @@ const testimonials: Testimonial[] = [
 		role: "Retail Investor",
 		company: "",
 		content:
-			"After losing money in previous market downturns, I was hesitant to get back into crypto. Fortifi.Ai's stable wallet gave me the confidence to invest again, knowing my capital is protected.",
-		avatar: "/placeholder.svg?height=100&width=100",
-	},
-	{
-		id: 5,
-		name: "Priya Patel",
-		role: "Digital Nomad",
-		company: "",
-		content:
-			"The Fortifi Card has been essential for my lifestyle. Being able to access my crypto at ATMs worldwide without fees has made traveling so much easier. I'm never going back to traditional banking.",
-		avatar: "/placeholder.svg?height=100&width=100",
+			"After losing money in previous market downturns, I was hesitant to get back into crypto. Astrologers Fund Inc.'s stable wallet gave me the confidence to invest again, knowing my capital is protected.",
+		avatar: "/assets/guy2.jpg",
 	},
 ];
 
@@ -99,8 +90,8 @@ export function TestimonialSection() {
 						What Our Users Say
 					</h2>
 					<p className="max-w-[700px] text-muted-foreground md:text-xl">
-						Discover how Fortifi.Ai is helping users protect and spend their
-						crypto
+						Discover how Astrologers Fund Inc. is helping users protect and
+						spend their crypto
 					</p>
 				</div>
 

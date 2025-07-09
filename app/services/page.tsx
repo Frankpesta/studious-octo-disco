@@ -1,8 +1,16 @@
+"use client";
 import Link from "next/link";
 import { ArrowRight, Shield, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Services() {
+	const handleLogin = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/login";
+	};
+	const handleRegister = () => {
+		window.location.href = "https://app.fortifiafunds.com/user/register";
+	};
+
 	return (
 		<div className="flex flex-col min-h-screen">
 			{/* Hero Section */}
@@ -15,8 +23,8 @@ export default function Services() {
 								Our Services
 							</h1>
 							<p className="max-w-[700px] text-muted-foreground md:text-xl">
-								Discover how Fortifi.Ai is revolutionizing the way you interact
-								with cryptocurrency
+								Discover how Astrologers Fund Inc. is revolutionizing the way
+								you interact with cryptocurrency
 							</p>
 						</div>
 					</div>
@@ -82,10 +90,10 @@ export default function Services() {
 									Spend Your Crypto Anywhere
 								</h2>
 								<p className="text-muted-foreground md:text-lg">
-									Struggling with tax issues? Fortifi.Ai is here to help! Our
-									cutting-edge, AI-powered, multi-chain payment solution offers
-									a seamless way to use your cryptocurrency in everyday
-									transactions.
+									Struggling with tax issues? Astrologers Fund Inc. is here to
+									help! Our cutting-edge, AI-powered, multi-chain payment
+									solution offers a seamless way to use your cryptocurrency in
+									everyday transactions.
 								</p>
 								<p className="text-muted-foreground md:text-lg">
 									With our Fortifi Mastercard and Visa card, you can
@@ -118,13 +126,13 @@ export default function Services() {
 								Ready to Experience Financial Freedom?
 							</h2>
 							<p className="max-w-[600px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Join thousands of users who trust Fortifi.Ai for their crypto
-								stability and payment needs.
+								Join thousands of users who trust Astrologers Fund Inc. for
+								their crypto stability and payment needs.
 							</p>
 						</div>
 						<div className="flex flex-col gap-2 min-[400px]:flex-row">
-							<Button size="lg" variant="secondary" asChild>
-								<Link href="/contact-us">Get Started Today</Link>
+							<Button size="lg" variant="secondary" onClick={handleLogin}>
+								Get Started Today
 							</Button>
 						</div>
 					</div>

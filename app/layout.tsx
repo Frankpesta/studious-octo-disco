@@ -11,8 +11,8 @@ const inter = Roboto({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: {
-		default: "Fortifi.Ai | Stable Crypto Wallet & Payment Solutions",
-		template: "%s | Fortifi.Ai",
+		default: "Astrologers Fund Inc. | Stable Crypto Wallet & Payment Solutions",
+		template: "%s | Astrologers Fund Inc.",
 	},
 	description:
 		"AI-powered stable wallet that protects your capital from market fluctuations and provides seamless crypto payment solutions.",
@@ -47,6 +47,10 @@ export default function RootLayout({
 					</div>
 					<Toaster />
 				</ThemeProvider>
+				<script
+					id="chatway"
+					async={true}
+					src="https://cdn.chatway.app/widget.js?id=espXSw2hiRNS"></script>
 			</body>
 		</html>
 	);
